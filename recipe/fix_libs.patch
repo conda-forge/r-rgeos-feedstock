@@ -1,0 +1,16 @@
+--- rgeos.orig/src/Makevars.win	2017-10-30 10:15:08.000000000 -0200
++++ rgeos/src/Makevars.win	2018-01-30 10:59:09.000000000 -0200
+@@ -1,11 +1,9 @@
+ COMPILED_BY ?= gcc-4.6.3
+-RWINLIB = lib${subst gcc,,${COMPILED_BY}}${R_ARCH}
+ 
+-PKG_CPPFLAGS =\
+-	-I../windows/gdal2-2.2.0/include/geos \
++PKG_CPPFLAGS = -I$(LIBRARY_INC)
+ 
+ PKG_LIBS = \
+-	-L../windows/gdal2-2.2.0/${RWINLIB} \
++	-L$(LIBRARY_LIB) \
+ 	-lgeos_c -lgeos  
+ 
+ all: clean winlibs
