@@ -28,14 +28,14 @@ requirements:
   build:
     - r-base
     - r-sp >=1.1_0
-    - geos
+    - geos 3.6.2
     - posix                # [win]
     - {{native}}toolchain  # [win]
     - gcc                  # [not win]
 
   run:
     - r-base
-    - geos
+    - geos 3.6.2
     - r-sp >=1.1_0
     - libgcc  # [not win]
 
