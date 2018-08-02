@@ -17,7 +17,8 @@ source:
     - fix_libs.patch
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
 
   rpaths:
@@ -26,18 +27,20 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+    - {{ compiler('cxx') }}        # [unix]
+    - {{ compiler('m2w64_cxx') }}  # [win]
+  host:
     - r-base
     - r-sp >=1.1_0
-    - geos 3.6.2
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
+    - geos
 
   run:
     - r-base
-    - geos 3.6.2
+    - geos
     - r-sp >=1.1_0
-    - libgcc  # [not win]
 
 test:
   commands:
