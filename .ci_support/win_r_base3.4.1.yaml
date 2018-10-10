@@ -1,3 +1,7 @@
+channel_sources:
+- conda-forge,defaults
+channel_targets:
+- conda-forge main
 geos:
 - 3.6.2
 m2w64_c_compiler:
