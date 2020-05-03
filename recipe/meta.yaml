@@ -16,7 +16,7 @@ source:
     - fix_libs.patch
 
 build:
-  number: 3
+  number: 4
   merge_build_host: True  # [win]
 
   rpaths:
