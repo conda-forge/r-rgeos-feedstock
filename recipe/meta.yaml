@@ -12,8 +12,6 @@ source:
     - https://cran.r-project.org/src/contrib/rgeos_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rgeos/rgeos_{{ version }}.tar.gz
   sha256: 357454e110ae19a665d5af5ffd7d670d2d7471566dd638dc614365c29b68600b
-  patches:
-    - fix_libs.patch
 
 build:
   number: 0
