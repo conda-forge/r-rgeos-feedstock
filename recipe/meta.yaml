@@ -1,4 +1,4 @@
-{% set version = "0.5-2" %}
+{% set version = "0.5-3" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,13 +11,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/rgeos_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rgeos/rgeos_{{ version }}.tar.gz
-  sha256: 1f2f112961c6b6f58e6de2f43b7acee37e480a6ec32f9b0d23285cc75dcf592a
-  patches:
-    - fix_libs.patch
+  sha256: 357454e110ae19a665d5af5ffd7d670d2d7471566dd638dc614365c29b68600b
 
 build:
-  number: 4
-  merge_build_host: True  # [win]
+  number: 0
+  merge_build_host: true  # [win]
 
   rpaths:
     - lib/R/lib/
@@ -48,12 +46,9 @@ test:
 about:
   home: https://r-forge.r-project.org/projects/rgeos/
   license: GPL (>= 2)
-  summary: Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology
-    operations on geometries. The 'GEOS' library is external to the package, and, when
-    installing the package from source, must be correctly installed first. Windows and
-    Mac Intel OS X binaries are provided on 'CRAN'.
+  summary: Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology operations on geometries. The 'GEOS' library is external to the package, and, when installing the package from source, must be correctly installed first. Windows and Mac Intel OS X binaries are provided on 'CRAN'.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
