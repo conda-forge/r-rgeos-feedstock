@@ -1,4 +1,4 @@
-{% set version = "0.5-3" %}
+{% set version = "0.5-5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/rgeos_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rgeos/rgeos_{{ version }}.tar.gz
-  sha256: 357454e110ae19a665d5af5ffd7d670d2d7471566dd638dc614365c29b68600b
+  sha256: 4baa0dfe6ff76e87ddb67a030fc14fe963d28b518485a4d71058923b2606d420
 
 build:
   number: 0
