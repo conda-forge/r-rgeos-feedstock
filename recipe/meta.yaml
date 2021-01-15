@@ -1,5 +1,4 @@
 {% set version = "0.5-5" %}
-
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -16,7 +15,6 @@ source:
 build:
   number: 1
   merge_build_host: true  # [win]
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,10 +43,11 @@ test:
 
 about:
   home: https://r-forge.r-project.org/projects/rgeos/
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology operations on geometries. The 'GEOS' library is external to the package, and, when installing the package from source, must be correctly installed first. Windows and Mac Intel OS X binaries are provided on 'CRAN'.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
