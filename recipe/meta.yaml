@@ -13,6 +13,7 @@ source:
   sha256: 420dbd48c0e8c840686b6ed29384715723d6926a1f9b0c437c60ad1853eef7f2
   patches:
     - patches/001-skip-svnversion.patch
+    - patches/winvars.patch
 
 build:
   number: 0
