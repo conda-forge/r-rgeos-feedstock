@@ -1,0 +1,18 @@
+--- rgeos.old/src/Makevars.win	2022-03-24 08:58:50.000000000 -0300
++++ rgeos/src/Makevars.win	2022-12-14 09:56:59.722597380 -0300
+@@ -28,13 +28,8 @@
+ RWINLIB = ../windows/gdal3-$(VERSION)
+ TARGET = lib$(subst gcc,,$(COMPILED_BY))$(R_ARCH)
+ 
+-PKG_CPPFLAGS =\
+-	-I$(RWINLIB)/include
+-
+-PKG_LIBS = \
+-	-L$(RWINLIB)/$(TARGET) \
+-	-L$(RWINLIB)/lib$(R_ARCH) \
+-	-lgeos_c -lgeos
++PKG_CPPFLAGS = -Iwin64 -I$(LIBRARY_INC)
++PKG_LIBS = -L$(LIBRARY_LIB) -Lwin64 -lgeos_c -lgeos
+ 
+ all: clean winlibs
+ 
