@@ -1,11 +1,24 @@
+About r-rgeos-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rgeos-feedstock/blob/main/LICENSE.txt)
+
 About r-rgeos
-=============
+-------------
 
 Home: https://r-forge.r-project.org/projects/rgeos/
 
 Package license: GPL-2.0-or-later
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rgeos-feedstock/blob/main/LICENSE.txt)
+Summary: Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology operations on geometries. The 'GEOS' library is external to the package, and, when installing the package from source, must be correctly installed first. Windows and Mac Intel OS X binaries are provided on 'CRAN'.
+
+Documentation: http://rgeos.r-forge.r-project.org/index.html
+About r-rgeos
+-------------
+
+Home: https://r-forge.r-project.org/projects/rgeos/
+
+Package license: GPL-2.0-or-later
 
 Summary: Interface to Geometry Engine - Open Source ('GEOS') using the C 'API' for topology operations on geometries. The 'GEOS' library is external to the package, and, when installing the package from source, must be correctly installed first. Windows and Mac Intel OS X binaries are provided on 'CRAN'.
 
