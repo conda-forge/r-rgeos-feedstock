@@ -1,4 +1,4 @@
-{% set version = "0.6-2" %}
+{% set version = "0.6-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,13 +10,13 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/rgeos_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rgeos/rgeos_{{ version }}.tar.gz
-  sha256: 2ee2bb8b0c20d7908ac55d4d1cf8292c624ab836e02599ce1871a249a59fe0af
+  sha256: 1ebc5a99fdcf7d293811ce26379ba1525a2b9f23b11f1fb4a9c582bf27fc2b3c
   patches:
     - patches/001-skip-svnversion.patch
     - patches/winvars.patch
 
 build:
-  number: 1
+  number: 0
   merge_build_host: true  # [win]
   rpaths:
     - lib/R/lib/
