@@ -7,7 +7,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rgeos-feedsto
 About r-rgeos
 -------------
 
-Home: https://r-forge.r-project.org/projects/rgeos/
+Home: https://r-forge.r-project.org/projects/rgeos/ https://libgeos.org http://rgeos.r-forge.r-project.org/index.html
 
 Package license: GPL-2.0-or-later
 
@@ -18,7 +18,7 @@ Documentation: http://rgeos.r-forge.r-project.org/index.html
 About r-rgeos
 -------------
 
-Home: https://r-forge.r-project.org/projects/rgeos/
+Home: https://r-forge.r-project.org/projects/rgeos/ https://libgeos.org http://rgeos.r-forge.r-project.org/index.html
 
 Package license: GPL-2.0-or-later
 
